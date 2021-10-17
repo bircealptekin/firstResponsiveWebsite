@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vegetarian Recipe Blog</title>
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js">
+        </script>
+        <script src="js/jquery_slicknav.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+    </head>
+
+    <body>
+    <div class="grid">
+        <div id="mobile">
+            <img id="logo2" src="images/logo2.png" width="200px">
+            <nav id="mobile_menu"></nav>
+        </div>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="mains.html">Mains</a></li>
+                <img id="logo1" src="images/logo1.png" width="20%">
+                <li><a href="desserts.html">Desserts</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="first">
+            <h2>Welcome to our veggie friendly recipe blog</h2>
+            <p>
+                Thinking about becoming a vegetarian but have no idea about what you can cook
+            for yourself after having meat based eating habits all these years? Our blog might help you!
+            </p>
+            </div>
+            <div id="second">
+            <h3>Why vegetarian?</h3>
+            <p>
+                Everyone has their own reasons, some people care bout animal rights, some people care about
+                the environment, some people care about their own health and some people care about all of them.
+                You might just want to try it without any reason as well. If you want to learn more about
+                vegetarianism we will link a few resources that might be interesting to check out:
+                <ul id="rsc">
+                    <li><h4><a href="https://www.vrg.org/" target="_blank">The Vegetarian Resource Group</a></h4></li>
+                    <li><h4><a href="https://vegsoc.org/" target="_blank">Vegetarian Society of the United Kingdom</a></h4></li>
+                    <li><h4><a href="https://www.forksoverknives.com/" target="_blank">Forks Over Knives</a></h4></li>
+                    <li><h4><a href="https://www.cowspiracy.com/" target="_blank">Cowspiracy</a></h4></li>
+                </ul>
+            </p>
+            </div>
+        </main>
+        <section>
+            <h3>Today's recipe</h3>
+            <h4>Vegetarian Fajitas</h4>
+            <img id="fajita" src="images/veg_fajitas.png" width="200">
+            <p>
+                Looking for a quick and easy veggie family meal? Try these meat-free fajitas,
+                loaded with black beans, avocado and peppers, which take just 15 minutes to make.
+            </p>
+            <div id="cook_info">
+                <img src="images/clock.png">
+                <h6>Time: 15 mins</h6>
+                <img src="images/serves.png">
+                <h6>Serves 4 </h6>
+            </div>
+            <p id="read_more"><a href="#">Read more...</a></p>
+        </section>
+        <footer>
+            <div class="footer"><h4>Design By: Birce Alptekin</h4></div>
+        </footer>
+    </div>
+
+
+    </body>
+</html>
