@@ -238,7 +238,6 @@ footer {
 
     #mobile_menu {
         display: block;
-        grid-area: mobile_menu;
     }
     #mobile_menu ul img {
         display: none;

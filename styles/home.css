@@ -163,13 +163,12 @@ footer {
 
     #logo2 {
         margin-left: 0.2%;
-        height: 100px;
+        height: 70px;
         width: auto;
     }
 
     #mobile_menu {
         display: block;
-        grid-area: mobile_menu;
     }
     #mobile_menu ul img {
         display: none;
