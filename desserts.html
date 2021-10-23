@@ -2,9 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Desserts</title>
+    <link rel="stylesheet" href="styles/desserts.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js">
+    </script>
+    <script src="js/jquery_slicknav.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
 </head>
+
 <body>
+<div class="grid">
+    <div id="mobile">
+        <img id="logo2" src="images/logo2.png" width="200px">
+        <nav id="mobile_menu"></nav>
+    </div>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mains.html">Mains</a></li>
+            <img id="logo1" src="images/logo1.png" width="20%">
+            <li><a href="desserts.html">Desserts</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="recipe_one">
+        <h3>Butternut Pumpkin Bread with Matcha Cream Cheese</h3>
+        <img class="recipes_img" src="images/pumpkin.jpg">
+        <p>Bye bye Banana Bread. 2021 is the year of the Pumpkin Bread. It is lightly sweet with a soft and
+            impossibly light crumb and hints of warm spices. Top it with cream cheese and a matcha sprinkle
+            if you are feeling fancy.
+        </p>
+        <div class="cook_info">
+            <img src="images/clock.png">
+            <h6>Time: 11.5 hrs</h6>
+            <img src="images/serves.png">
+            <h6>Serves 8</h6>
+        </div>
+        <p class="read_more"><a href="#">Read more...</a></p>
+    </section>
+    <section id="recipe_two">
+        <h3>Gingerbread and Lingonberry Bundt Cake</h3>
+        <img class="recipes_img" src="images/gingerbread.jpg">
+        <p>Just putting this up here before we are checking out for some Christmas celebrations with
+            Luise’s family. This is a our gingerbread bundt cake that we have been making a couple times
+            in December leading up to Christmas.
+        </p>
+        <div class="cook_info">
+            <img src="images/clock.png">
+            <h6>Time: 1 hour</h6>
+            <img src="images/serves.png">
+            <h6>Serves 6</h6>
+        </div>
+        <p class="read_more"><a href="#">Read more...</a></p>
+    </section>
+    <section id="recipe_three">
+        <h3>Dark Chocolate & Sweet Tahini Cups</h3>
+        <img class="recipes_img" src="images/tahini_cups.jpg">
+        <p>Tahini and chocolate are two of our favorite pantry ingredients. So we have put them together
+            into one of the best candies we know: A tahini version of peanut butter cups. Guess what they
+            are super easy too!
+        </p>
+        <div class="cook_info">
+            <img src="images/clock.png">
+            <h6>Time: 30 mins</h6>
+            <img src="images/serves.png">
+            <h6>Makes 20</h6>
+        </div>
+        <p class="read_more"><a href="#">Read more...</a></p>
+    </section>
+    <section id="recipe_four">
+        <h3>Peanut Butter Filled Protein Bars</h3>
+        <img class="recipes_img" src="images/protein-bars.jpg">
+        <p>We have got two fun news to share today! 1. The most delicious protein bars/bites with peanut
+            butter pockets. 2. Our brand new line of supplements developed for people on a plant based diet!
+        </p>
+        <div class="cook_info">
+            <img src="images/clock.png">
+            <h6>Time: 30 mins</h6>
+            <img src="images/serves.png">
+            <h6>Makes 16-18</h6>
+        </div>
+        <p class="read_more"><a href="#">Read more...</a></p>
+    </section>
+    <section id="recipe_five">
+        <h3>Smashed Cookie Salad with Strawberries</h3>
+        <img class="recipes_img" src="images/cookie_salad.jpg">
+        <p>Cookie Salad? Cookie Salad! This is not your typical salad but with the first local strawberries
+            of the year popping up here in Scandinavia, a smashed cookie salad seemed like a proper way to
+            celebrate.
+        </p>
+        <div class="cook_info">
+            <img src="images/clock.png">
+            <h6>Time: 45 mins</h6>
+            <img src="images/serves.png">
+            <h6>Serves 6</h6>
+        </div>
+        <p class="read_more"><a href="#">Read more...</a></p>
+    </section>
+    <section id="recipe_six">
+        <h3>Vegan Love Shakes</h3>
+        <img class="recipes_img" src="images/shakes.jpg">
+        <p> Looking at these two shakes overloaded with toppings and surrounded by a million small pieces
+            of nuts, crushed meringues and chocolate spread. As naughty as they look, these shakes are
+            made with real ingredients.
+        </p>
+        <div class="cook_info">
+            <img src="images/clock.png">
+            <h6>Time: 30 mins</h6>
+            <img src="images/serves.png">
+            <h6>Serves 2</h6>
+        </div>
+        <p class="read_more"><a href="#">Read more...</a></p>
+    </section>
+    <footer>
+        <div class="footer"><h4>Design By: Birce Alptekin</h4></div>
+    </footer>
+</div>
 
 </body>
 </html>

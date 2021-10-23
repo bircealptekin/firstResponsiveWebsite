@@ -1,10 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles/contact.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js">
+        </script>
+        <script src="js/jquery_slicknav.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+    </head>
+    <body>
+        <div class="grid">
+            <div id="mobile">
+                <img id="logo2" src="images/logo2.png" width="200px">
+                <nav id="mobile_menu"></nav>
+            </div>
+            <nav id="nav_menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mains.html">Mains</a></li>
+                    <img id="logo1" src="images/logo1.png" width="20%">
+                    <li><a href="desserts.html">Desserts</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <section id="email">
+                <h3>Contact us:</h3>
+                <form class="my-form">
+                    <div class="form-group">
+                        <label>Name: </label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email: </label>
+                        <input type="text" name="surname">
+                    </div>
+                    <div class="form-group">
+                        <label>Message: </label>
+                        <textarea name="message"></textarea>
+                    </div>
+                    <input class="button" type="submit" value="Submit" name=" ">
+                </form>
+            </section>
 
-</body>
+            <section id="socials">
+                <a href="#"><img src="images/instagram.png" width="30px"></a>
+                <a href="#"><img src="images/twitter.png" width="30px"></a>
+                <a href="#"><img src="images/youtube.png" width="30px"></a>
+                <a href="#"><img src="images/tiktok.png" width="30px"></a>
+            </section>
+
+            <footer>
+                <div class="footer"><h4>Design By: Birce Alptekin</h4></div>
+            </footer>
+        </div>
+    </body>
 </html>

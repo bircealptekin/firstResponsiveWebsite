@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:#F4F9F9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+
+    line-height:1.6em;
+    margin:0;
+}
+
+a {
+    text-decoration:none;
+    color:#93329E;
+}
+
+a:hover {
+    color: #316B83;
+}
+
+a:active{
+    color: #B4AEE8;
+}
+
+a:visited {
+    color: #440A67;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#mobile {
+    grid-area: mobile;
+    display: none;
+}
+
+#nav_menu {
+    grid-area: nav;
+    background-color: #D1E8E4;
+}
+
+#nav_menu ul {
+    display: flex;
+    align-items: center;
+    padding: 0 8% 0 8%;
+    justify-content: space-between;
+    margin: 0.5%;
+}
+
+.recipes_img {
+    width: 200px;
+    margin-top: 2%;
+    border-radius: 15px;
+}
+
+.read_more {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#recipe_one {
+    grid-area: recipe_one;
+    width: 90%;
+    height: 95%;
+    border:3px #F1D1D0 solid;
+    background-color: #F1D1D0;
+    padding:10px;
+    margin: 2% 0 2% 3.5%;
+    border-radius:20px;
+}
+
+#recipe_two {
+    grid-area: recipe_two;
+    width: 90%;
+    height: 95%;
+    border:3px #F1D1D0 solid;
+    background-color: #F1D1D0;
+    padding:10px;
+    margin: 2% 0 2% 3.5%;
+    border-radius:20px;
+}
+
+#recipe_three {
+    grid-area: recipe_three;
+    width: 90%;
+    height: 95%;
+    border:3px #F1D1D0 solid;
+    background-color: #F1D1D0;
+    padding:10px;
+    margin: 2% 0 2% 3.5%;
+    border-radius:20px;
+}
+
+#recipe_four {
+    grid-area: recipe_four;
+    width: 90%;
+    height: 95%;
+    border:3px #F1D1D0 solid;
+    background-color: #F1D1D0;
+    padding:10px;
+    margin: 2% 0 2% 3.5%;
+    border-radius:20px;
+}
+
+#recipe_five {
+    grid-area: recipe_five;
+    width: 90%;
+    height: 95%;
+    border:3px #F1D1D0 solid;
+    background-color: #F1D1D0;
+    padding:10px;
+    margin: 2% 0 2% 3.5%;
+    border-radius:20px;
+}
+
+#recipe_six {
+    grid-area: recipe_six;
+    width: 90%;
+    height: 95%;
+    border:3px #F1D1D0 solid;
+    background-color: #F1D1D0;
+    padding:10px;
+    margin: 2% 0 2% 3.5%;
+    border-radius:20px;
+}
+
+.cook_info {
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+    grid-template-areas:    "nav"
+							"recipe_one"
+                            "recipe_two"
+                            "recipe_three"
+                            "recipe_four"
+                            "recipe_five"
+                            "recipe_six"
+							"footer";
+}
+
+
+@media only screen and (min-width: 960px) {
+
+    .grid{
+        display: grid;
+        grid-template-areas:    "nav nav nav"
+                                "recipe_one recipe_two recipe_three"
+                                "recipe_four recipe_five recipe_six"
+								"footer footer footer";
+    }
+}
+@media only screen and (max-width: 959px) {
+    #nav_menu {
+        display: none;
+    }
+
+    #mobile {
+        display: flex;
+        background-color: #D1E8E4;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo2 {
+        margin-left: 0.2%;
+        height: 70px;
+        width: auto;
+    }
+
+    #mobile_menu {
+        display: block;
+        grid-area: mobile_menu;
+    }
+    #mobile_menu ul img {
+        display: none;
+    }
+    .slicknav_menu {
+        background-color: #D1E8E4 !important;
+    }
+    #fajita {
+        width: 150px;
+        border-radius: 15px;
+    }
+
+    h6 {
+        font-size: 0.8em;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-areas:    "mobile mobile"
+                                "recipe_one recipe_two"
+                                "recipe_three recipe_four"
+                                "recipe_five recipe_six"
+								"footer footer";
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    #nav_menu {
+        display: none;
+    }
+
+    #mobile {
+        display: flex;
+        background-color: #D1E8E4;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo2 {
+        margin-left: 0.2%;
+        height: 70px;
+        width: auto;
+    }
+
+    #mobile_menu {
+        display: block;
+        grid-area: mobile_menu;
+    }
+    #mobile_menu ul img {
+        display: none;
+    }
+    .slicknav_menu {
+        background-color: #D1E8E4 !important;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-areas:    "mobile"
+                                "recipe_one"
+                                "recipe_two"
+                                "recipe_three"
+                                "recipe_four"
+                                "recipe_five"
+                                "recipe_six"
+								"footer";
+
+    }
+}
