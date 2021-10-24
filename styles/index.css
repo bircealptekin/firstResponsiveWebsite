@@ -128,17 +128,8 @@ footer {
     display: none;
 }
 
-.grid{
-    display: grid;
-    align-items: center;
-    grid-template-areas:    "nav"
-							"main"
-                            "section"
-							"footer";
-}
 
-
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 960px) {
     .grid{
         display: grid;
         grid-template-areas:    "nav nav nav"
@@ -147,7 +138,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 959px) {
     #nav_menu {
         display: none;
     }
