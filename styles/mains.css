@@ -147,6 +147,7 @@ footer {
 
     .grid{
         display: grid;
+        align-items: center;
         grid-template-areas:    "nav nav nav"
                                 "recipe_one recipe_two recipe_three"
                                 "recipe_four recipe_five recipe_six"

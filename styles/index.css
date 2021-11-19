@@ -132,6 +132,7 @@ footer {
 @media only screen and (min-width: 960px) {
     .grid{
         display: grid;
+        align-items: center;
         grid-template-areas:    "nav nav nav"
                                 "main main section"
 								"footer footer footer";
